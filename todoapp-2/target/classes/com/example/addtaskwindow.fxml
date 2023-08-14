@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #593387;" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.AddTaskWindowController">
+   <children>
+      <AnchorPane layoutY="102.0" prefHeight="298.0" prefWidth="600.0" style="-fx-background-color: white;">
+         <children>
+            <TextField fx:id="nameField" layoutX="191.0" layoutY="34.0" prefHeight="26.0" prefWidth="215.0" promptText="Task Name" />
+            <DatePicker fx:id="datePicker" layoutX="206.0" layoutY="84.0" promptText="Due Date" />
+            <TextField fx:id="tagField" layoutX="228.0" layoutY="136.0" prefHeight="26.0" prefWidth="144.0" promptText="Tag" />
+            <Button fx:id="addButton" layoutX="280.0" layoutY="233.0" mnemonicParsing="false" onAction="#addTask" text="Add" />
+            <CheckBox fx:id="priorityCheckBox" layoutX="265.0" layoutY="185.0" mnemonicParsing="false" text="Priority?" />
+         </children>
+      </AnchorPane>
+      <Label layoutX="228.0" layoutY="33.0" text="Add Task" textFill="WHITE">
+         <font>
+            <Font size="36.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
